@@ -144,7 +144,7 @@ class PR_Content_Blocks
 
 		$content_block = get_post( $a['id'] );
 
-		return sprintf( '<div class="pr-content-blocks content-block block-id-%d">%s</div>', $content_block->ID, do_shortcode( $content_block->post_content ) );
+		return sprintf( '<div class="pr-content-blocks content-block block-id-%d block-%s">%s</div>', $content_block->ID, $content_block->post_name, do_shortcode( $content_block->post_content ) );
 	}
 
 }
